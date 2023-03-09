@@ -15,5 +15,15 @@ class MainActivity : AppCompatActivity() {
             .beginTransaction()
             .replace(R.id.frameButton, ButtonFragment.newInstance())
             .commit()
+
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.frameCheck, CheckFragment.newInstance())
+            .commit()
+
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.framePicture, PictureFragment.newInstance())
+            .commit()
     }
 }
